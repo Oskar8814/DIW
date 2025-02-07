@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Mobile first*/
+body {
+    width: 100%;
+}
+.header{
+    margin-top: 25px;
+    width: 100%;
+    height: 15vh;
+}
+.header__logo{
+    width: 100%;
+    height: 100%;
+    
+}
+.navigation{
+    background-color: rgb(59, 171, 199);
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    
+}
+.navigation ul{
+    list-style: none;
+    /* display: flex;
+    flex-direction:column; */
+
+}
+.navigation li{
+    padding: 20px;
+    margin:10px 0;
+}
+.navigation__link{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.content{
+    width: 100%;
+}
+
+.content__main{
+
+    text-align: left;
+    padding: 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction:column ;
+    /* align-items: flex-start; */
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.content__figure {
+    width: 100%; 
+    margin-bottom: 15px;
+}
+
+.content__img {
+    width: 100%; 
+    
+}
+
+.content__main h1, .content__main p{
+    /* align-content: flex-start; */
+    margin-bottom: 15px;
+    line-height: 1.6;  /*Para mejorar la legibilidad */
+    
+}
+
+.content__sidebar{
+    width: 100%;
+    /* height: 20vh; */
+    background-color: rgb(196, 224, 241);
+    padding: 30px 0;
+}
+
+.content__sidebar h2{
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.content__sidebar ul{
+    margin-left: 60px;
+}
+.content__sidebar a{
+    text-decoration: none;
+    color: black;
+    
+}
+.footer{
+    background-color: brown;
+    color: white;
+    padding: 20px;
+
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) { 
+    
+    .header{
+        max-width: 800px;
+        margin: 20px auto;
+    }
+
+    .navigation ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .content{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: stretch;
+    }
+    .content__main{
+        width: 75%;
+
+    }
+    .content__sidebar{
+        width: 25%;
+    }
+    .content__sidebar ul{
+        padding: 20px;
+    }
+}

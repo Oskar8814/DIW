@@ -1,0 +1,99 @@
+/* Breakpoints en 992px y 576px.
+La achura de las cards es flexible según el ancho de la ventana del navegador, pero solo puede variar entre 250 y 350px. */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.container .card{
+    max-width: 350px;
+    min-width: 250px;
+    flex: 1 0 250px;
+
+    height: 550px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    text-align: center;
+    margin: 20px 20px;
+
+    box-shadow: 0 0 0 1px rgb(150, 149, 149, 0.5); /*Sombre en todo el card*/
+    background-color: white;
+}
+.card.card2{
+    background-color: rgb(4, 105, 194);
+    color: white;
+    border: none;
+}
+
+
+.item2{
+    margin-top:20px;
+}
+a{
+    width: 170px;
+    padding: 20px;
+    text-decoration: none;
+    background-color: darkblue;
+    color:white;
+    border-radius: 25px;
+    display: inline-block; /*Junto al margin lo bajamos para separarlo del item2*/
+    margin-top: 60px;
+}
+.card__item{
+    padding:15px;
+    margin-top: 20px;
+}
+.card__item p{
+    padding:10px
+}
+
+.item1 :first-child{
+    font-weight: bold;
+}
+.item1 :nth-child(2){
+    font-size: 2.2rem;
+}
+
+.card1 .item1 :nth-child(3),.card3 .item1 :nth-child(3),.card1 .item2, .card3 .item2{
+    color: grey;
+}
+
+
+@media screen and (min-width: 576px) { 
+    
+}
+
+@media screen and (min-width: 992px) { 
+    body{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    .container{
+        background-image: linear-gradient(to bottom, rgb(252, 252, 252) 50%, rgb(1, 3, 97) 50%) ;
+        
+    }
+    
+    /* .background{
+        position: fixed;
+        bottom: 0;
+        background-image: url(../img/azul-marino.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center bottom;
+        width: 100%;
+        height: 50vh;
+        z-index: -1;
+    } */
+}
+

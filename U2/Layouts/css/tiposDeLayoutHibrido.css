@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: lightskyblue;
+    height: 600px;
+    max-width: 1200px;
+    min-width: 576px;
+    /* margin-inline: auto; */
+    /* padding: 0.1px; */
+    width: 42%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+header{
+    background-color: orange;
+    height: 50px;
+    margin: 20px;
+}
+main{
+    /* Usando display: flex; */
+    /* display: flex;
+    justify-content: space-between; */
+    margin: 20px;
+    
+}
+
+article{
+    width: 47.8%;
+    height: 490px;
+    background-color: aqua; 
+    padding: 20px;
+    margin-right: 0; /* Elimina el margen derecho del último artículo */
+}
+
+/* Float */
+article:first-of-type {
+    float: left;
+
+}
+
+article:last-of-type {
+    float: right;
+
+}

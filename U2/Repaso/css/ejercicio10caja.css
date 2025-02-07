@@ -1,0 +1,36 @@
+/* Modelo de caja >> crea una hoja de estilos para el ejercicio10.html, para que, 
+siguiendo las propiedades del modelo de caja de CSS, quede la página como la siguiente imagen. 
+Los div tienen anchos de 200px, 300px y 300px. Los spans, 180px. */
+*{
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+}
+.divespecial{
+    background-color: grey;
+    border: 1px solid orangered;
+    width: 200px;
+}
+.pespecial{
+    background-color: white;
+    width: 300px;
+    border: dotted 2px green;
+    padding: 15px;
+}
+.otroespecial{
+    background-color: white;
+    width: 300px;
+    border:dotted 1px grey;
+    margin: 20px auto;
+    padding: 0 20px;
+    /* margin-inline: auto; margin a izquierda y derecha, nos sirve aqui para centrar el div*/
+}
+
+span{
+    display: inline-block;
+    background-color: grey;
+    color: white;
+    border: solid 1px black;
+    width: 180px;
+    text-align: center;
+}

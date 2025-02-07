@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "miFuente";
+    src: url(../fonts/SixtyfourConvergence-Regular-VariableFont_BLED\,SCAN\,XELA\,YELA.ttf);
+}
+:root{
+    --mi_colorVerde: rgb(4, 182, 49);
+    --mi_colorAzul: rgb(26, 15, 167);
+    --mi_colorGris: grey;
+    
+    --mi_tamaño : 1.2rem;
+    --mi_stiloFuente: italic;
+}
+.parrafo_destacado{
+    font-family:"Edu AU VIC WA NT Guides";
+    font-size: 0.8rem;
+    font-style: var(--mi_stiloFuente);
+    color: aqua;
+}
+.parrafo_estandar{
+    font-family:"miFuente";
+    font-size: var(--mi_tamaño);
+    color: var(--mi_colorVerde)
+}
+h1,h2{
+    color:var(--mi_colorAzul);
+}
+p{
+    color: var(--mi_colorGris);
+}

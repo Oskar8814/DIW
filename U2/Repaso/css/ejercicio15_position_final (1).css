@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+/* Titulo */
+h1{
+    font-size: 3rem; /*48px*/
+    position: relative;
+    left: 50px;
+    top: 10px;
+    width: 80%; /**/
+    margin-bottom: 20px; /*Para separarlo (cuidado con el colapso de margenes)*/
+}
+
+/*Barra de navegacion Sticky menu */
+.sticky-menu {
+    background-color: darkslategray;
+    position: sticky;
+    top: 0px;
+    margin-bottom: 15px;
+    z-index: 2;
+}
+
+/*Enlaces*/
+.menu-element a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu-element a:hover{
+    text-decoration: underline;
+}
+
+.menu-element {
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+.sticky-menu :nth-child(1){
+    padding-left: 50px;
+}
+.banner{
+    background-color: lightskyblue;
+    width: 80%;
+    margin-inline: auto;
+    height: 200px;
+}
+
+.logo{
+    height: 120px;
+    width: 120px;
+}
+
+.logo1{
+    background-color: green;
+    position: relative;
+    top: 30px;
+    left: 50px;
+    z-index: 1;
+}
+.logo2{
+    background-color: orange;
+    position: relative;
+    bottom: 110px;
+    left: 90px;
+}
+
+.content{
+    background-color: coral;
+    width: 80%;
+    height: 600px;
+    margin-top: 15px;
+    margin-inline: auto;
+    position: relative;
+    
+}
+.centered{
+    background-color: lightgreen;
+    position: absolute;
+    height: 200px;
+    width: 80%;
+    top:30%;
+    left:10%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.footer{
+    background-color: darkslategray;
+    position: fixed;
+    bottom: 0px;
+    z-index: 2;
+    width: 100%;
+}
+.footer :nth-child(1){
+    padding-left: 50px;
+}

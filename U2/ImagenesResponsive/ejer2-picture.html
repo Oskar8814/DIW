@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes Responsive Picture</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+
+        /* img{
+            width: 100%;
+            display: block;
+        } */
+    </style>
+</head>
+<body>
+    <h1>Etiqueta picture básica</h1>
+    <!-- <picture class="picture">
+        <source srcset="img2/imagen-1920.jpg" media="(min-width:1240px)">
+        <source srcset="img2/imagen-1000.jpg" media="(min-width:768px)">
+        <img src="img2/imagen-700.jpg" alt="cabaña">
+    </picture> -->
+
+    <picture class="picture2">
+        <source srcset="img2/imagen-1920.avif" type="image/avif" media="(min-width:1920px)">
+        <source srcset="img2/imagen-1000.avif" type="image/avif" media="(min-width:1280px)">
+        <source srcset="img2/imagen-700.avif" type="image/avif" media="(min-width:640px)">
+
+        <source srcset="img2/imagen-1920.webp" type="image/webp" media="(min-width:1920px)">
+        <source srcset="img2/imagen-1000.webp" type="image/webp" media="(min-width:1280px)">
+        <source srcset="img2/imagen-700.webp" type="image/webp" media="(min-width:640px)">
+        
+        <source srcset="img2/imagen-1920.jpg" type="image/jpg" media="(min-width:1920px)">
+        <source srcset="img2/imagen-1000.jpg" type="image/jpg" media="(min-width:1280px)">
+        <source srcset="img2/imagen-700.jpg" type="image/jpg" media="(min-width:640px)">
+
+        <img src="img2/imagen-700.jpg" alt="cabaña"  loading="lazy">
+    </picture>
+</body>
+</html>

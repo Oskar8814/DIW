@@ -1,0 +1,68 @@
+*{
+    color: darkred;
+}
+h1{
+    color: darkblue;
+}
+h2,h3{
+    color: darkslateblue;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Segunda Parte */
+nav a{
+    text-decoration: none;
+}
+main p{
+    font-size: 30px;
+    line-height: 1.5;
+}
+section p{
+    font-size: 20px;
+}
+section > p{
+    font-size: 24px;
+}
+header h1, main h2{
+    text-align: center;
+}
+main + section{
+    border: dotted 2px black;
+}
+main ~ *{
+    background-color: grey;
+}
+section h2 + article{
+    width: 200px;
+    background-color: bisque;
+}
+/* El primer artículo tendrá una anchura de 200px y color de fondo bisque */
+/* Establece una anchura de 200px a todas las imágenes que tengan el atributo alt
+ */
+img[alt]{
+    width: 200px;
+}
+/* Establece un border-radius del 50% a las imágenes cuyo texto alternativo empiece por mon
+ */
+img[alt^= "mon"]{
+    border: 1px solid  black;
+    border-radius: 50%;
+}
+/* Establece una anchura de 300px a las imágenes cuyo nombre de archivo contenga el número 2 */
+img[src*="2"]{
+    width: 300px;
+}
+/* Establece un borde naranja oscuro de 5px sólido a las imágenes cuyo texto alternativo acabe en o */
+img[alt$=o]{
+    border: 5px solid darkorange; 
+}
+/* Establece un borde exterior de 10px azul a las imágenes cuyo texto alternativo contenga la palabra mono */
+img[alt~=mono]{
+    outline: 10px solid blue;
+}
+/* Los enlaces con destino contacto.html estarán tachados */
+a[href="contacto.html"]{
+    text-decoration:line-through;
+}

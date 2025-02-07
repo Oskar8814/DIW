@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*Contenedor ppl*/
+.container{
+    outline: 2px dashed black;
+    height: 675px;
+    max-width: 800px;
+    width: 90%;
+    margin: 10px;
+
+    display: flex;
+    /*flex-direction: column;Main axis pasa a ser el vertical*/
+    /* flex-direction: column-reverse; Main axis pasa a ser vertical pero con el orden inverso */
+    /* display: inline-flex; hace que el siguiente elemento que en linea */
+    /* flex-wrap: wrap; si los elementos no caben caen a la siguiente linea */
+}
+/*Items*/
+.item{
+    color: white;
+    font-size: 2rem;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+}
+.item1{
+    background-color: crimson;
+}
+.item2{
+    background-color: chartreuse;
+}
+.item3{
+    background-color: darkorange;
+    
+}
+.item4{
+    background-color: blue;
+    margin-left: auto;
+}

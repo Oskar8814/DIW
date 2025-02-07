@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: linear-gradient(to top, rgba(4, 238, 255, 0.2), rgba(254, 254, 254, 0.0)),url(../img/img5.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.contact{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__form{
+    width: 30%;
+    min-width: 350px;
+    border:1px solid white;
+    background-color: rgb(179, 245, 240);
+    padding: 20px;
+    border-radius: 10px;
+
+}
+.contact__fusion{
+    width: 100%;
+}
+.contact__legend{
+    font-size: 2rem;
+    font-weight: bolder;
+    
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.contact__field{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content:space-around;
+    
+}
+.contact__label{
+    width: 20%;
+}
+.contact__input,.contact__textarea{
+    width: 80%;
+    height: 30px;
+    
+}
+.contact__send{
+    display: flex;
+    justify-content: center;
+
+}
+.contact__btn{
+    width: 70%;
+    padding: 10px;
+    background-image: linear-gradient(to top, rgba(4, 238, 255, 0.2), rgba(254, 254, 254, 0.0));
+}
+
+@media screen and (min-width: 768px) { 
+    .contact__form{
+        min-width: 650px;
+    }
+
+    /* coloca en la misma linea en cada extremo(drch e izq) los inp de nombre y telefono */
+    .contact__fusion {
+        display: flex;
+        justify-content: space-between;
+        gap: 25px;;
+    }
+
+    .contact__fusion .contact__field{
+        width: 100%;
+    }
+
+    .contact__fusion .contact__field .contact__label{
+        min-width: 42%;
+    }
+    
+    /* hace crecer al input text del telefono hacia la izq */
+    .contact__fusion .contact__field:nth-of-type(2) .contact__label {
+        min-width: 25%;
+    }
+
+    /* aumenta el tamaño del textarea */
+    .contact__textarea{
+        height: 60px;
+    }
+
+    /* poner el boton en la izquierda */
+    .contact__send{
+        display: flex;
+        justify-content: end;
+    }
+    .contact__btn {
+        width: 20%;
+    }
+}

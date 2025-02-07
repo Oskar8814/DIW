@@ -1,0 +1,104 @@
+/* Reset global de márgenes, rellenos y box-sizing */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Contenedor principal con estilos básicos */
+.container {
+    color: #666666; /* Color de texto */
+    font-family: "Lobster", cursive; /* Tipografía decorativa */
+    margin: 20px auto; /* Centrado horizontal con margen vertical */
+    width: 90%; /* Ancho del 90% del viewport */
+    height: 100vh; /* Ocupa toda la altura del viewport */
+}
+
+/* Encabezado con estilo centrado y línea inferior */
+header {
+    text-align: center;
+    border-bottom: #666666 solid 1px; /* Línea inferior */
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+/* Wrapper de contenido principal con diseño flexible */
+.content_wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+    margin-bottom: 1em;
+    justify-content: space-between; /* Distribuir espacio entre elementos */
+}
+
+/* Barra de navegación */
+nav {
+    padding: 1em;
+    width: 10%; /* Ancho del 10% del contenedor */
+}
+
+/* Espaciado entre elementos dentro de la navegación */
+nav div {
+    margin-bottom: 20px;
+}
+
+/* Contenido principal con bordes y alineación centrada */
+main {
+    border: 1px solid #666666;
+    border-radius: 1em; /* Bordes redondeados */
+    height: 400px; /* Altura fija */
+    padding: 1em;
+    text-align: center; /* Centrar el texto */
+    width: 54%; /* Ocupa el 54% del contenedor */
+}
+
+/* Imagen dentro del main con bordes redondeados */
+main img {
+    border-radius: 1em;
+    height: 70%; /* Altura relativa al contenedor principal */
+    width: 80%; /* Ancho relativo al main */
+}
+
+/* Estilo específico para el primer artículo en .content_wrapper */
+.content_wrapper article:nth-of-type(1) {
+    height: 400px; /* Altura específica */
+}
+
+/* Artículos con bordes y estilo consistente */
+article {
+    border: 1px solid #666666;
+    border-radius: 1em; /* Bordes redondeados */
+    height: 300px; /* Altura fija */
+    padding: 1em;
+    text-align: center; /* Centrar el texto */
+    width: 32%; /* Ancho del 32% del contenedor */
+}
+
+/* Imagen dentro de los artículos */
+article img {
+    border-radius: 1em; /* Bordes redondeados */
+    height: 60%; /* Altura relativa al artículo */
+    width: 100%; /* Ancho completo del artículo */
+    margin-bottom: 10px; /* Separación inferior */
+}
+
+/* Sección de artículos con flexbox para distribución */
+.articles {
+    display: flex;
+    justify-content: space-between; /* Distribuir artículos equitativamente */
+    margin-left: 10%; /* Dejar espacio para el nav superior */
+    margin-bottom: 20px; /* Separación inferior */
+}
+
+/* Pie de página con estilo flexible */
+footer {
+    border-top: 1px solid #666666; /* Línea superior */
+    display: flex;
+    justify-content: space-between; /* Distribuir elementos en extremos */
+    align-items: center; /* Centrar elementos verticalmente */
+    padding: 2em;
+}
+
+/* Imágenes en el pie de página */
+footer img {
+    width: 50px; /* Tamaño fijo de las imágenes */
+}

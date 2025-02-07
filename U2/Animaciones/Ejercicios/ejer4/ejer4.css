@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    min-width: 600px;
+    max-width: 1000px;
+
+    margin: 0 auto; /*Centrado*/
+
+}
+
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.imagen-circulo {
+    width: 250px;
+    
+    clip-path: circle(40% at center);
+    shape-outside: circle(40% at center);
+    shape-margin: 10px;
+    float: right;
+
+    margin-top: 30px;
+}
+.imagen-hexagono {
+    max-width: 300px;
+    
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    shape-outside: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    shape-margin: 10px;
+    float: left;
+
+    margin-top: 10px;
+    margin-right: 1rem;
+}

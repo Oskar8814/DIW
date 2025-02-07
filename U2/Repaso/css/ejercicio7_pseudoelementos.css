@@ -1,0 +1,11 @@
+.manifiesto::first-letter{
+    font-size: 3em;
+    color: #111111;
+}
+.manifiesto::first-line{
+    font-size: 2em;
+    color: #222222;
+}
+.manifiesto{
+    color: #333333;
+}

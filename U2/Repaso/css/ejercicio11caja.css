@@ -1,0 +1,30 @@
+nav {
+    display: table;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: table-row;
+    text-align: center;
+}
+
+nav ul li {
+    display: table-cell;
+    padding: 1rem;
+    background-color: green; 
+    text-align: center;
+}
+
+nav ul li:nth-child(odd) {
+    background-color: orange; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: blue;
+    cursor: crosshair;
+}

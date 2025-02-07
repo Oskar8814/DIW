@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.container{
+    border: 1px dashed black;
+    height: 675px;
+    width: 750px;
+    margin: 50px;
+}
+
+.box{
+    border: 2px solid black;
+    color: white;
+    font-size: 2rem;
+    height: 150px;
+    width: 150px;
+    padding: 10px;
+    line-height: 130px; /*Centra verticalmente el texto es util conpoco texto solo tenemos un número*/
+    text-align: center;
+}
+
+.first{
+    background-color: blueviolet;
+}
+/*Estatic se coloca segun el flujo html e ignora top, left, right botton....*/
+.second{
+    background-color: chartreuse;
+    position: relative; 
+    top: 100px;
+    left: 200px;
+    /*Relative sii atiende a top, left, right, botton....*/
+    /*El desplazamiento se realiza desde el lugar inicial del elemento según su flujo html*/
+}
+.third{
+    background-color: chocolate;
+    position: absolute;
+    top:100px;
+    left: 200px;
+    /*Absolute sii atiende a top, left, right, botton....*/
+    /*Absolute si tiene un padre con relative el desplazamiento sera con respecto al padre*/
+    /*Absolute realiza el desplazamiento desde el borde de la ventana del navegador o desde un elemento padre que tenga position:relative*/
+}
+.fourth{
+    background-color: crimson;
+    position:fixed;
+    bottom: 0px;
+    right: 0px;
+    /*Atiende a top, left, right, botton*/
+    /*No atiende al scroll y se fija a la pantalla.*/
+}
+.fith{
+    background-color: cornflowerblue;
+    position: sticky;
+    top: 0px; /*El top indica desde la posición inicial a la que se queda pegado*/
+}

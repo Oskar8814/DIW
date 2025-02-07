@@ -1,0 +1,140 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*1rem = 10px*/
+}
+
+:root{
+    --color-rosa:#c6426e;
+    --color-morado:#642b73;
+    --color-amarillo:#ffce00;
+    --color-blanco:#ffffff;
+    --color-negro: #000000;
+    --color-azul:#037bc0;
+}
+
+*,*::before, *::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/*Class container*/
+.container{
+    margin: 0 auto; /*Centrado*/
+    max-width: 1100px; /*110rem*/
+
+}
+
+/*Imagenes responsive*/
+img{
+    max-width: 100%;
+    display: block;
+}
+
+@font-face {
+    font-family: "Staatliches";
+    src: url(../fonts/Staatliches-Regular.ttf);
+}
+
+body{
+    background-color:var(--color-azul) ;
+    font-family: "Staatliches", sans-serif;
+    font-size: 2rem;
+}
+
+/* HEADER */
+
+.header{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* NAVIGATION */
+
+.navigation{
+    background-color: var(--color-morado);
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+}
+.navigation__link{
+    text-decoration: none;
+    color: var(--color-blanco);
+    padding: 1rem;
+    
+}
+.navigation__link--1{
+    color: var(--color-amarillo);
+}
+
+/* NUESTROS PRODUCTOS */
+.main__tittle{
+    color: var(--color-amarillo);
+    padding: 2rem;
+    text-align: center;
+}
+
+.main__product{
+    background-color: var(--color-morado);
+    width: 350px;
+    padding: 1rem;
+    text-align: center;
+    color: var(--color-blanco);
+}
+
+.main__text{
+    margin-top: 1rem;
+}
+
+.main__product h3{
+    padding: 1rem;
+}
+.main__price{
+    color: var(--color-amarillo);
+}
+
+.main__products{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(9, 1fr);
+    gap: 1rem;
+    justify-items: center;
+}
+
+.main__product--4{
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    
+}
+.main__product--13{
+    grid-column: 1/-1;
+    grid-row: 8/9;
+}
+
+/* FOOTER */
+.footer{
+    background-color: var(--color-morado);
+    color: var(--color-blanco);
+    margin-top: 1rem;
+    padding: 3rem;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) { 
+    .main__products{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 1rem;
+    }
+
+    .main__product--4{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .main__product--13{
+        grid-column: 2/4;
+        grid-row: 5/6;
+    }
+}

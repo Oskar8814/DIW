@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth; /*Comportamiento del scroll suave*/
+}
+
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+p{
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+.pagina{
+    height: 100vh;
+    width: 100%;
+}
+.pagina3{
+    height: 200vh;
+}
+
+/* CSS página 1 Portada */
+
+.pagina1{
+    background-color: grey;
+    color: white;
+    padding: 20px;
+}
+
+.pagina1 .header__nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.pagina1 .header__links{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 1em;
+    font-size: 1.5rem;
+}
+.content__figure{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.content__figure img{
+    width: 70%;
+    height: 400px;
+}
+
+.content__title, .content__text{
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+/* CSS para la Página 2 */
+
+.pagina2 .header__title {
+    text-align: center;
+    padding: 1em;
+    color: #fc466b;
+}
+.pagina2 .content{
+    padding: 20px;
+    
+}
+
+.pagina2 .content .content__link{
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    
+}
+
+.pagina2 .content .content__link a {
+    text-decoration: none;
+    color: white;
+    padding: 20px 30px;
+    background-color: #fc466b;
+    border-radius: 30px;
+    
+} 
+
+/* CSS para la Página 3 Cards */
+
+.pagina3 .header__title{
+    text-align: center;
+    padding: 1em;
+    color: #fc466b;
+}
+.pagina3 .cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pagina3 .card{
+    max-width: 350px;
+    min-width: 250px;
+    height: 500px;
+    
+    background-color: white;
+    box-shadow: 0 0 0 1px rgb(150, 149, 149, 0.5); /*Sombre en todo el card*/
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.pagina3 .card__img img{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.pagina3 .card__titular{
+    color: #3f5efb;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.card__items p{
+    padding: 10px;
+}
+
+.pagina3 .card .card__link{
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    
+}
+.pagina3 .card .card__link a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    background-color: #3f5efb;
+    border-radius: 30px;
+}
+
+/* CSS página 4 gallery */
+
+.pagina4{
+    height: 100%;
+}
+
+.pagina4 .header{
+    width: 100%;
+    height: 150px;
+    background-color: #fc466b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagina4 .gallery__title{
+    color: #fc466b;
+    text-align: center;
+    padding: 30px;
+}
+.pagina4 .gallery__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pagina4 .gallery__figure{
+    height: 350px;
+    flex: 1 1 450px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.pagina4 .gallery__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 4px;
+}
+
+/* CSS página 5 expertos */
+.pagina5{
+     height: 100%; /*ajustar sobrante si quito queda bastante por debajo debido a la conf inicial */
+}
+.pagina5 .gallery__title{
+    color: #fc466b;
+    text-align: center;
+    padding: 30px;
+}
+
+.pagina5 .gallery2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.pagina5 .gallery2__container{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+.pagina5 .gallery2__img{
+    height: 150px;
+    flex: 1 1 150px;
+}
+
+/* CSS página 6 contacto */
+
+.pagina6 .header__title{
+    color: #fc466b;
+    text-align: center;
+    padding: 30px;
+}
+
+.contact{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background-color: grey;
+}
+
+.contact__form{
+    width: 50%;
+    background-color: rgb(196, 112, 112);
+}

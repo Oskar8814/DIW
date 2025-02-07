@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    font-family: sans-serif;
+}
+
+body{
+    background-color: beige;
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.textos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-row: 2; */
+    gap: 10px;
+    max-width: 1200px;
+}
+
+.textos p {
+    margin: 0;
+    padding: 10px;
+}

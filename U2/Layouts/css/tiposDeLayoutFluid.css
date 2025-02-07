@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: lightskyblue;
+    height: 600px;
+    width: 42%;
+    /* margin-inline: auto; */
+    /* padding: 0.1px; */
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+header{
+    background-color: orange;
+    height: 50px;
+    margin: 20px;
+}
+main{
+    margin: 20px;
+}
+
+article{
+    width: 47%;
+    height: 490px;
+    background-color: aqua; 
+    padding: 15px;
+    float:left; 
+    overflow: hidden;
+}
+article:last-of-type {
+    float: right;
+}

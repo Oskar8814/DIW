@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+.container{
+    outline: 2px solid crimson;
+    height: 700px;
+    width: 800px;
+    margin: 50px auto;
+}
+.element{
+    background-color: darkblue;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1rem;
+    line-height: 150px;
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    margin-top: 25px;
+    position: relative;
+    left: 0px; /*posicion/valor inicial necesaria */
+
+    /* transition-property:background-color,color,font-size; */
+    /* transition-property:all; Seria lo mismo que arriba */
+    /* transition-duration: 4s, 2s, 3s; */
+    /* transition-delay:2s; */
+    /* transition-timing-function: ease-in; */
+    transition: left 3s ;
+    /* transition: transform 3s ; */
+}
+
+.container:hover .element{
+    background-color: crimson;
+    color: black;
+    left:500px;
+    /* transform: translateX(500px); */
+}

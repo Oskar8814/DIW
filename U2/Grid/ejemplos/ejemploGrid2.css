@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    outline: 2px dashed black;
+    height: 800px;
+    max-width: 800px;
+    width: 90%;
+    margin: 20px auto;
+
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill,1fr,100px);
+    grid-template-columns: repeat(auto-fill,minmax(100px,1fr)); */
+    grid-template-columns: repeat(auto-fit,minmax(100px,1px));
+
+    /* altura de las filas que se crean de forma dinamica */
+    grid-auto-rows: 150px;
+
+    /*Cambia la disposicion en filas a columnas *(con el dense no se colocan en fila ni columnas sino que se rellena el grid sobrante)*/
+    grid-auto-flow: column;
+}
+.item{
+    /* height: 100px;
+    width: 100px; */
+    padding: 10px;
+    color: white;
+    font-size: 2rem;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.item1{
+    background-color: darkblue;
+}
+.item2{
+    background-color: darkred;
+
+}
+.item3{
+    background-color: darkgreen;
+
+}
+.item4{
+    background-color: darkgoldenrod;
+
+}

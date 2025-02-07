@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    font-family: sans-serif;
+}
+
+body{
+    background-color: lightgrey;
+}
+
+.navigation{
+    margin: 50px 40px;
+
+}
+.navigation__link{
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem 2rem ;
+    margin-left: 15px;
+    border-radius: 25px;
+}
+
+.link1{
+    background-color: darkmagenta;
+    color: white;
+}
+
+.link2{
+    background-color: white;
+    color: darkmagenta;
+}
+
+.link3{
+    font-weight: 600;
+}
+.link3::after:hover{
+    content: "";
+    display: block;
+    height: 4px;
+    width: 79px;
+    background-color: darkmagenta;
+    margin-top: 10px;
+}

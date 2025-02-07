@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    font-family: sans-serif;
+}
+.navigation{
+    margin: 50px 20px;
+
+}
+
+.navigation__link{
+    background-color: #333;
+    color:white;
+    border: 1px solid black;
+
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5rem 3rem;
+
+    /* transition-property: background-color,color; */
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.navigation__link:hover {
+    background-color: white;
+    color: black;
+
+}
+
+
+/* Boton premium */
+.premium{
+    margin: 50px 20px;
+
+}
+
+.premium__btn{
+    background-image: linear-gradient(20deg,rgba(153, 0, 255, 0.56) 20%, rgb(0, 119, 255,0.6));
+    color: white;
+    font-weight: bold;
+
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    display: inline-block; 
+
+    transition-duration: 0.3s;
+}
+
+.premium__btn:hover{
+    transform: translateY(-3px);
+}
+

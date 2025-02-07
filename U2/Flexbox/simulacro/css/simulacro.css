@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@font-face{
+    font-family: "Raleway";
+    src: url('../fonts/Raleway-Regular.ttf') format('truetype'),
+        url('../fonts/Raleway-Bold.ttf') format('truetype'),
+        url('../fonts/Raleway-Black.ttf') format('truetype') }
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.4rem;
+}
+h4{
+    font-size: 1.2rem;
+}
+p{
+    font-size: 1.2rem;
+}
+
+body{
+    max-width: 1100px;
+    margin: 0 auto;
+    font-family: 'Raleway';
+}
+.header .header__nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.hero{
+    min-height: 24rem;
+    
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+.hero__items h1, .hero__items h4{
+    /* line-height: 1.5; */
+    margin-bottom: 15px;
+}
+
+
+.info{
+    min-height: 6rem;
+    background-image: linear-gradient(to right, #741d51, #e44e52);    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.info__item{
+    width: 60%;
+    margin-left:15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.info__logo{
+    width: 10%;
+}
+.info__img{
+    width: 100%;
+
+}
+.info__text{
+    width: 70%;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    gap: 20px;
+}
+
+.cards__title{
+    text-align: center;
+    padding: 20px;
+}
+.card{
+    max-width: 250px;
+    height: 450px;
+    border: 1px solid #333;
+    
+}
+.car__figure{
+    width: 100%;
+    
+}
+.card__img{
+    width: 100%;
+}
+.card h4 {
+    padding: 20px 20px 0 20px;
+}
+.card .card__autor{
+    padding: 20px 20px 0 20px;
+}
+.card .card__precio{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 0 20px;
+}
+
+.card .card__button{
+    width: 100%;
+    margin-top: 90px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.card .card__link{
+    text-decoration: none;
+    background-color: #741d51;
+    padding: 10px;
+    width: 90%;
+    display: inline-block;
+    text-align: center;
+    color: white;
+}
+.footer{
+    margin-top: 20px;
+    border-top: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.footer__bloque a{
+    text-decoration: none;
+    display: block;
+    
+}
+
+@media screen and (min-width: 768px) { 
+    .footer{
+        flex-direction: row;
+        gap: 100px;
+    }
+}
+@media screen and (min-width: 1024px) { 
+    
+    /*Reset*/
+    .info *{
+        padding: 0;
+        margin: 0;
+    }
+    .info {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+

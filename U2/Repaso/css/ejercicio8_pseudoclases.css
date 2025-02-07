@@ -1,0 +1,10 @@
+tbody tr:first-child{
+    background-color: lawngreen;
+}
+tbody tr:last-child{
+    background-color: darkred;
+    color:white;
+}
+tbody tr td{
+    border-bottom: grey 1px solid;
+}

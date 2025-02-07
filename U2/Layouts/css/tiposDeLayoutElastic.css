@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: lightskyblue;
+    height: 600px;
+    width: 50em;
+    /* margin-inline: auto; */
+    /* padding: 0.1px; */
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+header{
+    background-color: orange;
+    height: 50px;
+    margin: 20px;
+}
+main{
+    padding-left: 20px;
+}
+
+article{
+    width: 23em;
+    height: 490px;
+    background-color: aqua; 
+    padding: 20px;
+    margin-right: 20px;
+}
+
+/* Float */
+article:first-of-type {
+    float: left;
+
+}
+
+article:last-of-type {
+    float: right;
+
+}
+
+

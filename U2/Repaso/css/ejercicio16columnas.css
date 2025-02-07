@@ -1,0 +1,13 @@
+
+body{
+    background-image: linear-gradient(to right, lightblue , darkslateblue );    
+}
+
+.columns {
+    column-width: 15rem;
+}
+.threecolumns{
+    column-count: 3;
+    column-gap: 2em;
+    column-rule: thin dashed yellow ;
+}

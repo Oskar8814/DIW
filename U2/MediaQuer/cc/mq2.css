@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+.container >*{
+    height: 300px;
+    
+}
+.red{
+    background-color: red;
+    width: 20%;
+    float: left;
+}
+.blue{
+    background-color: blue;
+    width: 50%;
+    float: left;
+}
+.yellow{
+    background-color: yellow;
+    width: 30%;
+    float: left;
+}
+
+/*MediaQueries*/
+
+@media screen and (max-width:992px){
+    .blue,.red{
+        width: 50%;
+        float: left;
+    }
+    .yellow{
+        width: 100%;
+        float: left;
+    }
+}
+@media screen and (max-width:576px){
+    .blue,.red,.yellow{
+        width: 100%;
+    }
+}

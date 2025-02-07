@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth; /*Comportamiento del scroll suave*/
+}
+.menu {
+    background-color: darkslategray;
+    position: fixed; 
+    top: 0px;
+    width: 100%;
+}
+.menu-element {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    float: right; 
+}
+.menu-element a{
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 20px;
+}
+
+.menu-element a:hover{
+    color: black;
+    background-color: white;
+}
+
+.img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+    text-align: center;/*Centra el texto*/
+}
+
+.img1{
+    background-image: url(../img/fondoOscuro.jpg);
+}
+
+.img2{
+    background-image: linear-gradient(to top, rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0.0)), url(../img/img2.jpeg);
+    background-attachment: fixed;
+}
+.img3{
+    background-image: linear-gradient(125deg,rgba(123,26,143,1) 16%, rgba(215,25,25,1) 55%, rgba(235,67,6,1) 81%, rgba(241,255,0,1) 95%);
+    
+}
+.img span{
+    color: white;
+    font-size: 48px;
+    line-height: 800px;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.8);
+}

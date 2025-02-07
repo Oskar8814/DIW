@@ -1,0 +1,143 @@
+/* Anchura máxima del contenedor: 1000px
+Altura header y footer: 100px
+Breakpoint en 800px
+Paleta de colores y fuente a elegir
+El footer siempre queda en la parte inferior de la ventana, independientemente de la cantidad de contenido. */
+:root{
+    --heigth-nav-foot:100px;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+}
+
+body{
+    background-image: linear-gradient(to right, rgba(255, 238, 0, 0.6),rgba(253, 250, 201, 0.9) ) ;
+    font-family: "Poppins",sans-serif;
+}
+
+.container {
+    background-color: white;
+    max-width: 1000px;
+    width: 95%;
+
+    margin: 15px auto;
+    margin-bottom: 15px;
+    min-height: calc(100vh - var(--heigth-nav-foot) );
+    padding: 0.1px;/*Paar que se aplique el margin entre el header y container top por el colapso*/
+    
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+header{
+    height: var(--heigth-nav-foot);
+    background-color: darkblue;
+    margin: 20px;
+}
+.header__container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.header__nav{
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+    margin-top:15px;
+}
+.header__links,.header__title{
+    color: white;
+    text-decoration: none;
+}
+.content{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.blog{
+    background-color: teal;
+    color: whitesmoke;
+    width: 96%;
+    padding: 25px;
+}
+.blog h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.blog .blog__items{
+    padding-left: 30px;
+    padding-bottom: 25px;
+}
+
+.service{
+    width: 96%;  
+    margin-top: 20px;
+}
+.service__card{
+    color: whitesmoke;
+    padding: 25px;
+    text-align: center;
+    
+}
+.card1{
+    background-color: rgb(80, 14, 14);
+}
+.card2{
+    background-color: brown;
+}
+.card3{
+    background-color: rgb(243, 169, 169);
+}
+
+.footer{
+    height: var(--heigth-nav-foot);
+    width: 96%;
+    background-color: darkmagenta;
+    color:whitesmoke;
+    margin: 20px;
+
+    margin-top: auto;/*Lo fija al final de la pagina y dentro del container*/
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+/*MQ Mobile First*/
+@media screen and (min-width: 800px){
+    .header__container{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .content{
+        flex-direction: row;
+        margin: 20px;
+        gap: 20px;
+        align-items: flex-start;
+        flex-basis: 60%;
+    }
+    .blog{
+        max-width: 350px;
+    }
+    .service{
+        display: flex;
+        flex-direction: row;
+        margin-top: 0px;
+    }
+    .service__card{
+        flex: 1;
+    }
+}

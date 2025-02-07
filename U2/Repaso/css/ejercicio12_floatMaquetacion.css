@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 95%;
+    height: 830px;
+    background-color: grey;
+    overflow-y: auto;
+}
+.green{
+    background-color: green;
+    height: 150px;
+    margin: 20px;
+}
+.yellow{
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: yellow;
+    height: 620px;
+    float: left;
+    width: 25%;
+
+}
+.red{
+    background-color: red;
+    height: 300px;
+    float:left;
+    width: 20%;
+    margin-left: 62px;
+}
+.blue{
+    background-color: blue;
+    height: 300px;
+    float: left;
+    width: 67.5%;
+    margin-top: 20px;
+    margin-left: 62px;
+}

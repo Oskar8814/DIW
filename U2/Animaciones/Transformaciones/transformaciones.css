@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+.container{
+    outline: 2px solid crimson;
+    height: 700px;
+    width: 800px;
+    margin: 50px auto;
+}
+.element{
+    background-color: darkblue;
+    color: white;
+    font-family: sans-serif;
+    font-size: 2rem;
+    line-height: 150px;
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    margin-top: 25px;
+}
+
+/* TRANSFORMACIONES: propiedad transform */
+/* Translate */
+.translate{
+    /* transform: translateX(400px); */
+    /* transform: translateY(800px); */
+    transform: translate(0px,0px);
+    transition: 5s;
+}
+.container:hover .translate{
+    transform: translate(400px,80px);
+}
+/* scale */
+.scale{
+    transform: scale(50%);
+    /* transform: scale(0.5); */
+    transition: 5s;
+}
+.container:hover .scale{
+    transform: scale(150%);
+}
+
+/* rotate */
+/* Unidades 
+    grados: 0-360deg
+    vueltas:
+ */
+
+.rotate{
+    transform: rotate(0deg);
+    transform-origin: top left;
+    transition: 5s;
+}
+.container:hover .rotate{
+    transform: rotate(360deg);
+}
+
+
+/* Skew */
+.skew{
+    transform: skew(0deg);
+    transition: 5s;
+}
+.container:hover .skew{
+    transform: skew(30deg);
+}
+
+/* Combinar */
+.extra{
+    transform: translate(400px, 100px) rotate(180deg) scale(0.5) skew(20deg);
+}
+.container:hover .extra{
+    transform: translate(0px, 0px) rotate(0deg) scale(1) skew(0deg);
+    transition: 5s;
+}

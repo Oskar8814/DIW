@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    width: 90%;
+    margin: 0px auto;
+}
+.container >*{
+    height: 150px;
+}
+
+/*Mobile first*/
+
+header{
+    background-color: yellow;
+    padding-top: 3rem;
+    text-align: center;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+
+/*Media Queries*/
+@media screen and (min-width:576px){
+    .red,.blue{
+        width: 50%;
+        float: left;
+    }
+    .green{
+        width: 100%;
+        float: left;
+    }
+}
+@media screen and (min-width:933px){
+    .red,.blue,.green{
+        width: calc(100%/3);
+    }
+}
+
+@media screen and (orientation: landscape){
+    header{
+        background-color: orange;
+        color: green;
+    }
+}
