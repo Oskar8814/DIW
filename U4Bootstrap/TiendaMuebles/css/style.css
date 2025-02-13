@@ -12,15 +12,25 @@
 :root{
     --bs-blue:#037bc0;
     --bs-green: #8cbc00;
-    --green-hover:#764c02;
+    --green-hover:#769c02;
 }
 
 .text-primary{
     color: var(--bs-blue) !important;
 }
 
+.bg-primary{
+    background-color: var(--bs-blue) !important ;
+}
+
+.btn-success{
+    background-color: var(--bs-green) !important;
+}
+
+
+
 html{
-    size: 62.5%;
+    font-size: 62.5%;
 }
 
 body{
@@ -44,6 +54,32 @@ h3{
     font-size: 2.4rem;
 }
 
+/*HERO*/
+.hero{
+    background-image: url(../img/principal.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 25rem;
+}
+
+
+/* Transiciones */
+.zoom{
+transform: scale(1);
+transition: transform 0.3s;
+}
+
+.zoom:hover{
+    transform: scale(1.2);
+}
+
+.btn-hover{
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+.btn-hover:hover{
+    background-color: var(--green-hover)!important;
+}
 @media screen and (min-width: 768px) { 
     h1{
         font-size: 5rem;
@@ -53,5 +89,8 @@ h3{
     }
     h3{
         font-size: 3rem;
+    }
+    .hero{
+        height: 55rem;
     }
 }
